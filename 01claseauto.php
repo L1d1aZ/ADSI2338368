@@ -1,11 +1,21 @@
 <?php
-    require_once("01_ejercicio.php");
+    require_once("01ejercicio.php");
+    $objVehiculo = new Vehiculo("MCN-982", "MAZDA", 2020, 4550, 70 , 30);
+$objVehiculo->getVehiculo();
 
-    $objvehiculo = new vehiculo("MCN-930","Mazda",2020,45500);
-    $objvehiculo->getvehiculo();
-    print_r('<pre>');
-    print_r($objvehiculo);
-    print_r('<pre>');
+print_r('<pre>');
+print_r($objVehiculo);
+print_r('</pre');
 
-    echo "<br>";
-    echo $objvehiculo->marca;
+echo"<br>";
+echo $objVehiculo->getMarca();
+echo"<br>";
+$objVehiculo->setMarca("FORD");
+echo $objVehiculo->getMarca();
+echo"<br>";
+echo $objVehiculo->modelo;
+echo"<br>";
+echo " La distancia recorrida es: ". $objVehiculo -> calculo_distancia();
+
+
+?>
